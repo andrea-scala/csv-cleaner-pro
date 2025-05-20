@@ -1,32 +1,53 @@
-# csv-cleaner-pro
-A simple and flexible Python CLI tool to clean CSV files by removing empty rows, duplicates, and trimming headers. Perfect for data preprocessing and automation tasks.
-Main features:
+# CSV Cleaner Pro
 
-- Removes completely empty rows
-- Removes duplicate rows
-- Trims whitespace from headers
-- Saves a new cleaned CSV file
+CSV Cleaner Pro is a lightweight command-line Python tool designed to quickly clean CSV files.
 
-How to use:
+It helps you:
 
-Example command:
+- Remove completely empty rows
+- Remove duplicate entries
+- Trim whitespace from headers
 
+This tool is ideal for data analysts, developers, and freelancers who need to automate CSV preprocessing.
+
+Built with simplicity and flexibility in mind, CSV Cleaner Pro can be integrated easily into your workflow or larger automation pipelines.
+
+Feel free to use, modify, and adapt it for your projects!
+
+Licensed under the MIT License.
+
+---
+
+## How to use
+
+Run the script from the command line:
+
+```bash
 python main.py --input examples/dirty_sample.csv --output clean_output.csv
+```
 
-Requirements:
+---
 
-To run the script, install the required packages with:
+## Requirements
 
+Install the dependencies with:
+
+```bash
 pip install -r requirements.txt
+```
 
-Supported options:
+---
 
--i, --input            path to the input CSV file (required)
--o, --output           path to save the cleaned CSV file (required)
--e, --remove-empty-rows    removes completely empty rows (optional)
--d, --remove-duplicates    removes duplicate rows (optional)
--t, --trim-header          trims whitespace from headers (optional)
+## Supported options
 
-License:
+- `-i`, `--input`: path to the input CSV file (required)
+- `-o`, --output`: path to save the cleaned CSV file (required)
+- `-e`, `--remove-empty-rows`: removes completely empty rows (optional)
+- `-d`, `--remove-duplicates`: removes duplicate rows (optional)
+- `-t`, `--trim-header`: trims whitespace from headers (optional)
+
+---
+
+## License
 
 This project is released under the MIT license.
